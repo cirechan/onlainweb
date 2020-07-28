@@ -1,0 +1,365 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kelly+Slab&display=swap');
+
+*{
+    box-sizing: border-box;
+    margin: 0;
+}
+body{
+    font-family: 'Miriam Libre', sans-serif;
+    font-weight: 700;
+    display: block;
+}
+
+
+
+/* NAV*/
+.nav-container{
+    background: #292929;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2), 0px 10px 15px rgba(0, 0, 0, 0.25);
+    height: 72px;
+    
+}
+.borde{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 72px;
+    
+}
+
+nav ul{
+    display: flex;
+}
+
+nav .logo img {
+    width: 10%;
+    height: 10%;
+    transition: 0.3s;
+}
+
+nav .logo a:hover{
+    -webkit-filter: drop-shadow(0px 10px 10px #000000);
+    filter: drop-shadow(0px 10px 10px #000000);
+}
+
+.nav-items li{
+    list-style: none;
+    margin-right: 100px;
+}
+
+.nav-items li:nth-last-of-type(1){
+    margin:0;
+}
+.nav-items li a{
+font-family: Miriam Libre;
+font-style: normal;
+font-weight: bold;
+font-size: 15px;
+text-decoration: none;
+color: #ffffff;
+transition: 0.5s;
+}
+
+.nav-items li a.active{
+    color: greenyellow;
+}
+
+.nav-items li a:hover{
+    -webkit-filter: drop-shadow(0px 10px 10px black);
+    filter: drop-shadow(0px 10px 10px black);
+}
+
+.nav-items li a#shop:hover{
+
+    color: greenyellow;
+
+}
+
+
+
+/*HEADER*/
+.header-container{
+    background-image: url('/img/mgSSYnD.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 1920px 1080px;
+    height: calc(100vh - 122px) ;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    overflow: hidden;
+}
+
+.wrapper{
+    width: 1200px;
+    margin: 0 auto;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    float: right;
+    align-self: center;
+    height: calc(100vh - 122px) ;
+}
+
+.text{
+    color: #ffffff;
+    align-items: center;
+    box-sizing: border-box;
+}
+.text h1{
+    font-family: 'Black Ops One', cursive;
+    font-size: 60px;
+    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
+    padding-bottom: 10;
+    margin-left: 5%;  
+    transition: 0.4s;
+}
+
+.text h1:hover{
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+@-webkit-keyframes shine{
+    from {
+      -webkit-mask-position: 150%;
+    }
+    
+    to {
+      -webkit-mask-position: -50%;
+    }
+  }
+
+.line{
+    width: 400px;
+    height: 2px;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+.text p{
+    font-family: 'Qwigley', sans-serif;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    font-size: 50px;
+    margin-left: 8%;
+    padding-top: 10px;
+}
+.text p:hover{    
+    -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
+    -webkit-mask-size: 200%;
+    animation: shine 2s infinite;
+}
+
+/*FOOTER*/
+footer{
+    height: 50px;
+    width: 100%;
+    margin-bottom: 0px;
+    background: #292929;
+    box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2), 0px -10px 15px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    color: #ffffff;
+    overflow: hidden;
+    position: absolute;
+}
+
+.sponsors{
+    max-width: 1200px;
+    display: flex;
+    justify-content: space-between;
+    margin-left: 5%;
+}
+.sponsors img{
+    justify-content: space-between;
+    max-height: 30px;
+    margin-top: 10px;
+
+    padding: 0px 10px;
+}
+
+
+
+/* PLAYERS */
+.bg{
+    background-image: url('/img/worlds2019-1.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    height: calc(100vh - 122px) ;
+    overflow: hidden;
+    z-index: -100;
+    
+}
+
+
+.header-container-players{
+    width: 1200px;
+    height: calc(100vh - 150px);
+    margin: 0 auto;
+    padding: 25px 20px;
+    
+}
+
+
+
+        /* CARDS */
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 5%;
+    width: 1200px;
+    margin-left: -5px;
+}
+    .top{
+        padding-left: 0px;
+    }
+        .top-fondo{
+            background: url(/img/joshua-brian-smith-ornn-base-splash-web2.jpg);
+            background-size: 280px 170px;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+
+        h2{
+            font-family: 'Kelly Slab', cursive;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 30px;
+            text-align: center;
+            color: rgb(172, 172, 172);
+            padding: 5px;
+            background-color: rgba(31, 31, 31, 0.574);
+            transition: 0.5s;
+        }
+            .top h2:hover{
+                background-color: rgba(108,15,29, 0.874);
+            }
+
+        h3{
+            font-family: 'Miriam Libre', sans-serif;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 25px;
+            line-height: 120%;
+            align-items: center;
+            text-align: center;
+            color: #FFFFFF;
+            align-self: center;
+            margin-top: 10px;
+        }
+
+        .jgl-fondo{
+            background: url(/img/ekko-true-damage.jpg);
+            background-size: 280px 170px;
+            background-position: top;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+           .jgl h2:hover{
+                background-color: rgba(103,117,178, 0.874);
+            }
+        
+       .mid-fondo{
+            background: url(/img/katarina-project.jpg);
+            background-size: 280px 170px;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+        .mid h3, .adc h3, .supp h3{
+            margin-top: 25px;
+        }
+
+        .mid h2:hover{
+            background-color: rgb(185,78,105, 0.874);
+        }
+
+        .adc-fondo{
+            background: url(/img/xayah.jpg);
+            background-size: 280px 170px;
+            background-position: top;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+           .adc h2:hover{
+                background-color: rgba(166,40,117, 0.874);
+            }
+        .adc-fondo{
+            background: url(/img/xayah.jpg);
+            background-size: 280px 170px;
+            background-position: center;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+           .adc h2:hover{
+                background-color: rgba(166,40,117, 0.874);
+            }
+    .supp-fondo{
+            background: url(/img/pyke-project.jpg);
+            background-size: 280px 170px;
+            background-position: top;
+            background-repeat: no-repeat;
+            box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+            border-radius: 20px;
+            width: 220px;
+            height: 140px;
+            overflow: hidden;
+        }
+           .supp h2:hover{
+                background-color: rgba(234,101,48, 0.874);
+            }
+
+            
+            .staff{
+                padding-top: 10px;
+            }
+            
+            .staff-fondo{
+                position: absolute;
+                background: black url(/img/staff.jpg);
+                background-size: 1200 180px;
+                background-position: right;
+                background-repeat: no-repeat;
+                box-shadow: 0px 5px 10px 3px rgba(0, 0, 0, 0.2), 0px 10px 20px rgba(0, 0, 0, 0.25);
+                border-radius: 20px;
+                width: 1200px;
+                height: 180px;
+                overflow: hidden;
+            }
+            
+            .staff h3{
+                margin-top: 25px;
+            }
+
+            
+               .staff h2:hover{
+                background: linear-gradient(to right, rgba(43,49,100,0.574) 0%, rgba(0,0,0,0.874) 38%, rgba(0,0,0,0.874) 65%, rgba(14,144,32,0.574) 100%)
+                }

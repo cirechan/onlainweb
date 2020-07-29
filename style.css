@@ -681,9 +681,9 @@ footer{
         text-align: center;
         
 
-
+    }
     /*FOOTER*/
-    footer{
+    .footer{
         height: fit-content;
         width: 100%;
         margin-bottom: 0px;

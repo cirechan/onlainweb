@@ -544,6 +544,7 @@ footer{
         align-items: center;
         background-attachment: fixed;
         overflow: hidden;
+        max-height: fit-content;
     }
     
     .wrapper{

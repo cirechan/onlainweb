@@ -14,6 +14,8 @@ body{
 
 
 /* NAV*/
+
+
 .nav-container{
     background: #292929;
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2), 0px 10px 15px rgba(0, 0, 0, 0.25);
@@ -114,14 +116,7 @@ header{
     align-items: center;
     box-sizing: border-box;
 }
-.text h1{
-    font-family: 'Black Ops One', cursive;
-    font-size: 60px;
-    text-shadow: 0px 5px 20px rgba(0, 0, 0, 0.25);
-    padding-bottom: 10;
-    margin-left: 5%;  
-    transition: 0.4s;
-}
+
 
     #h2:hover{
     -webkit-mask-image: linear-gradient(-75deg, rgba(0,0,0,.6) 30%, #000 50%, rgba(0,0,0,.6) 70%);
@@ -472,3 +467,144 @@ footer{
     animation: shine 4s infinite;
 }
 
+/* phone */
+
+@media only screen and (max-width: 700px){
+
+    *{
+        max-width: 100%;
+        max-height: 100%;
+        box-sizing: border-box;
+    }
+
+    .nav-container{
+        height: 19rem;
+        width: 100%;
+    }
+
+
+    .borde{
+        height: 19rem;
+        max-width: 80%;
+        left: 50%;
+        
+    }
+
+    nav{ 
+        
+        height: 19rem;
+        width: 100%;
+        display: block;
+    }
+    .nav-items{ 
+        line-height: 25rem;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        
+        
+    }
+
+
+    nav .logo img {
+        position: absolute;
+        width: 6rem;
+        height: 6rem;
+        transition: 0.3s;
+        margin:5% 33.5%
+        
+        
+    }
+
+    .nav-items li{
+        margin-right: 1rem;
+        list-style: none;
+        margin: 0 auto;
+    }
+    .nav-items li:nth-last-of-type(1){
+        margin:auto;
+    }
+
+    .nav-items li a{
+    font-family: 'Miriam Libre', sans-serif;
+    font-size: 1.5rem;
+    text-decoration: none;
+    color: #ffffff;
+    transition: 0.5s;
+
+    }
+
+    .header-container{
+        background-image: url('/img/mgSSYnD.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        
+        display: flex;
+        align-items: center;
+        background-attachment: fixed;
+        overflow: hidden;
+    }
+    
+    .wrapper{
+        width: 552px ;
+        margin: 0 auto;
+        align-items: center;
+    }
+    header{
+        display: block; 
+        margin-right: 0rem;      
+       
+    }
+    .text{
+        color: #ffffff;
+        align-items: center;
+        margin-top: 25rem;
+
+    }
+    
+    
+    .line{
+        width: 400px;
+        height: 2px;
+        background-color: #ffffff;
+        border-radius: 50%;
+    }
+    .text p{
+        font-family: 'Qwigley', sans-serif;
+        text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        font-size: 50px;
+        padding-top: 10px;
+    }
+
+
+
+
+
+
+    /*FOOTER*/
+    footer{
+        height: fit-content;
+        width: 100%;
+        margin-bottom: 0px;
+        background: #292929;
+        box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2), 0px -10px 15px rgba(0, 0, 0, 0.2);
+        box-sizing: border-box;
+        color: #ffffff;
+
+        position: absolute;
+    }
+
+    .sponsors{
+        max-width: 80%;
+        display: block;
+        margin: 0 auto;
+
+    }
+    .sponsors img{
+        display:block;
+        max-height: 8rem;
+        padding: 2rem 3rem;
+        margin: 0 auto;
+    }
+}

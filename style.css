@@ -657,7 +657,7 @@ footer{
     }
     
     .shop-card{
-        min-height: 28.5rem;
+        height: 456px;
         width: 100%;
         background: rgba(184, 184, 184, 0.452);
         

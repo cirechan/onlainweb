@@ -497,7 +497,7 @@ footer{
         display: block;
     }
     .nav-items{ 
-        line-height: 25rem;
+        line-height: 10rem;
         width: 100%;
         margin: 0;
         padding: 0;
@@ -506,14 +506,21 @@ footer{
     }
 
 
-    nav .logo img {
-        position: absolute;
-        width: 6rem;
-        height: 6rem;
-        transition: 0.3s;
-        margin:5% 33.5%
+    .logo {
         
+        position: relative;
         
+        width: 100%;
+        height: fit-content;
+
+    }
+    img#logo{
+        height: 90px;
+        width: 90px;
+        margin-left: 50%;
+        margin-top: 10%;
+        transform: translateX(-50%);
+
     }
 
     .nav-items li{
@@ -590,20 +597,19 @@ footer{
         box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.2), 0px -10px 15px rgba(0, 0, 0, 0.2);
         box-sizing: border-box;
         color: #ffffff;
-
         position: absolute;
     }
 
     .sponsors{
-        max-width: 80%;
+        max-width: 100%;
         display: block;
         margin: 0 auto;
 
     }
     .sponsors img{
         display:block;
-        max-height: 8rem;
-        padding: 2rem 3rem;
+        max-height: 4rem;
+        padding: 1rem 3rem;
         margin: 0 auto;
     }
 }

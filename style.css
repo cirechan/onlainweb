@@ -607,13 +607,16 @@ footer{
     
     .card-container{
         display: block;
+       
     }
-    
+
     .top, .jgl, .mid, .adc, .supp{
-        margin: 2rem auto;
+        width: 90%;
         margin-left: 50%;
-        transform: translateX(-50%);
+        transform: translateX(-30%);
+        margin-bottom: 2rem;
     }
+
 
     .staff{
         height: fit-content;
